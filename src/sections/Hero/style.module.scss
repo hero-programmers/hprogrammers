@@ -1,0 +1,39 @@
+$primary-color: hsl(276, 88%, 24%);
+$secondary-color: hsl(216, 52%, 11%);
+
+.section {
+  position: relative;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.gradient {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at right 30% top 30%, $primary-color, $secondary-color, $secondary-color);
+  z-index: -10;
+}
+
+.logo {
+  width: 64px;
+
+  @media (screen(lg)) {
+    width: 128px;
+  }
+
+  @media (screen(xl)) {
+    width: 256px;
+  }
+}
+
+.wrapper {
+  @apply container flex justify-center items-center gap-2 md:gap-4 lg:gap-6;
+}
+
+.brand_name {
+  @apply font-space-grotesk text-2xl md:text-4xl lg:text-6xl xl:text-8xl font-bold;
+}
