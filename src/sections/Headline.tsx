@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { easeInOut, motion, useScroll, useTransform } from "framer-motion";
 
 const Headline = () => {
