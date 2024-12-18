@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { spaceGrotesk } from "./fonts";
 
 import "./globals.css";
+import SmoothScroll from "@/components/SmoothScroll";
 
 export const metadata: Metadata = {
   title: "Hero Programmers",
@@ -18,7 +19,7 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} font-space-grotesk antialiased`}
       >
-        {children}
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );
