@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { easeInOut, motion, useScroll, useTransform } from "framer-motion";
+import { cubicBezier, motion, useScroll, useTransform } from "framer-motion";
 
 const Headline = () => {
   const containerRef = useRef<HTMLElement>(null);
@@ -10,8 +10,8 @@ const Headline = () => {
     offset: ["start start", "end end"],
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-95%"], {
-    ease: easeInOut,
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"], {
+    ease: cubicBezier(0.37, 0, 0.63, 1),
   });
 
   return (
@@ -21,7 +21,7 @@ const Headline = () => {
           style={{
             x,
           }}
-          className="text-nowrap w-fit text-[20rem] md:text-[40rem]"
+          className="text-nowrap w-fit text-[10rem] md:text-[20rem] lg:text-[40rem]"
         >
           Let&apos;s code_ your career & learn as one.
         </motion.p>
