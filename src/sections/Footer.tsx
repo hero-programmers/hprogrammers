@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#fafafa] py-12">
-      <div className="container flex justify-between items-center">
+    <footer className="bg-[#fafafa] py-12 px-4 overflow-hidden">
+      <div className="container flex flex-col md:flex-row gap-4 justify-between items-center">
         <div className="flex gap-2 items-center">
           <Logo className="size-8" />
           <h6 className="text-xl font-medium">Hero Programmers</h6>
