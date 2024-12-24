@@ -1,8 +1,8 @@
-import { Hero, Headline, CallToAction, Footer } from "@/sections";
-//import Navbar from "../components/Navbar";
+import { Hero, Headline, CallToAction, Footer, Header } from "@/sections";
 export default function Home() {
   return (
     <>
+      <Header />
       <main>
         <Hero />
         <Headline />
