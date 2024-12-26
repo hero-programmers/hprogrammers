@@ -2,8 +2,8 @@ import { ThemeButton } from "./ui";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between">
-      <div className="flex gap-4 items-center">
+    <nav className="flex items-center justify-between gap-4">
+      <div className="flex gap-4">
         <a>Home</a>
         <a>About</a>
         <a>Join</a>
