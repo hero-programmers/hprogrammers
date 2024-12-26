@@ -1,2 +1,3 @@
 import ThemeButton from "./theme-toggle";
-export { ThemeButton };
+import DiscordChannel from "./DiscordChannel";
+export { ThemeButton, DiscordChannel };

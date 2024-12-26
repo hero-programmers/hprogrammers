@@ -18,6 +18,17 @@ export default {
         secondary: "var(--secondary)",
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "discord-white": {
+          DEFAULT: "#F2F3F5",
+          300: "#DBDEE1",
+          600: "#D7D9DC",
+        },
+        "discord-black": {
+          DEFAULT: "#313338",
+          100: "#767A83",
+          400: "#404249",
+          900: "#202225",
+        },
       },
       backgroundImage: {
         hero: "radial-gradient(circle at right 30% top 30%, var(--primary), var(--secondary), var(--secondary))",

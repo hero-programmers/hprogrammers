@@ -20,12 +20,7 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} font-space-grotesk antialiased bg-background text-foreground dark:text-background dark:bg-secondary`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="system">
           <SmoothScroll>{children}</SmoothScroll>
         </ThemeProvider>
       </body>
