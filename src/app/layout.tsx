@@ -18,9 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${spaceGrotesk.variable} font-space-grotesk antialiased bg-background text-foreground dark:text-background dark:bg-secondary`}
+        className={`${spaceGrotesk.variable} bg-background font-space-grotesk text-foreground antialiased dark:bg-secondary dark:text-background`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          disableTransitionOnChange
+        >
           <SmoothScroll>{children}</SmoothScroll>
         </ThemeProvider>
       </body>

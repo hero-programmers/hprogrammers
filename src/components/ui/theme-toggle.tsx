@@ -4,7 +4,6 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
 import ThemeTransition from "../animation/theme-transition";
-import { AnimatePresence } from "framer-motion";
 
 const ThemeButton = () => {
   const [mounted, setMounted] = useState(false);
@@ -19,8 +18,10 @@ const ThemeButton = () => {
   const handleThemeChange = () => {
     setIsAnimating(true);
     setTimeout(() => {
-      console.log("Theme changed");
       setTheme(theme === "dark" ? "light" : "dark");
+    }, 1000);
+
+    setTimeout(() => {
       setIsAnimating(false);
     }, DURATION * 1000);
   };
@@ -36,13 +37,11 @@ const ThemeButton = () => {
           <FaMoon className="size-4" />
         )}
       </button>
-      <AnimatePresence mode="wait">
-        {isAnimating && (
-          <>
-            <ThemeTransition />
-          </>
-        )}
-      </AnimatePresence>
+      {isAnimating && (
+        <>
+          <ThemeTransition />
+        </>
+      )}
     </div>
   );
 };

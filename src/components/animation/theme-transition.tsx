@@ -1,58 +1,43 @@
 "use client";
 import Logo from "@/assets/logo";
-import { motion } from "framer-motion";
-
-const vairents = {
-  start: {
-    clipPath: "circle(0% at 50% 50%)",
-  },
-  visible: {
-    clipPath: "circle(150% at 50% 50%)",
-    backdropFilter: "blur(10px)",
-  },
-  exit: {
-    backdropFilter: "blur(0px)",
-    transition: {
-      duration: 1,
-    },
-    clipPath: "circle(0% at 50% 50%)",
-  },
-};
+import { useAnimate } from "framer-motion";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 const ThemeTransition = () => {
+  const [scope, animate] = useAnimate();
+  const { theme } = useTheme();
+  const [pageTheme] = useState(theme);
+  const backgroundColor =
+    pageTheme === "dark" ? "bg-secondary" : "bg-background";
+
+  useEffect(() => {
+    const doAnimate = async () => {
+      try {
+        await animate(
+          "div",
+          { clipPath: "circle(150% at 50% 50%)" },
+          { duration: 1 },
+        );
+
+        await animate("div", { scale: 6, x: 1920 * 1.5 }, { duration: 1 });
+        await animate(
+          "div",
+          { clipPath: "circle(0% at 50% 50%)" },
+          { duration: 1 },
+        );
+      } catch {}
+    };
+    doAnimate();
+  });
+
   return (
-    <div>
-      <motion.div
-        key={"theme-transition"}
-        className="fixed inset-0 flex items-center justify-center bg-background dark:bg-secondary"
-        variants={vairents}
-        initial="start"
-        animate="visible"
-        exit="exit"
-        transition={{ duration: 2 }}
+    <div key={"theme-transition"} ref={scope}>
+      <div
+        className={`fixed inset-0 flex items-center justify-center ${backgroundColor}`}
       >
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2, duration: 1 }}
-        >
-          <motion.div
-            initial={{
-              scale: 1,
-            }}
-            animate={{
-              scale: 6,
-              x: 1920 * 1.5,
-            }}
-            transition={{
-              delay: 0.9,
-              duration: 1,
-            }}
-          >
-            <Logo />
-          </motion.div>
-        </motion.div>
-      </motion.div>
+        <Logo />
+      </div>
     </div>
   );
 };
