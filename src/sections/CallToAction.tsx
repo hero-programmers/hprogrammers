@@ -25,7 +25,7 @@ const CallToAction = () => {
         className="absolute inset-0 rounded-xl bg-hero"
       />
       <DiscordLogoFloating />
-      <DiscordLogoFloating className="bottom-0 right-0 translate-x-1/2 translate-y-16 rotate-[120deg]" />
+      <DiscordLogoFloating className="bottom-0 left-full -translate-x-1/2 translate-y-16 rotate-[120deg]" />
       <div className="z-[2]">
         <p className="text-4xl text-white md:text-6xl lg:text-8xl">
           Join us on{" "}
