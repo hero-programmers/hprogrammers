@@ -1,19 +1,17 @@
 import Logo from "@/assets/logo";
-import Link from "next/link";
+import { Navigation } from "@/components";
 
 const Footer = () => {
   return (
-    <footer className="bg-background dark:bg-secondary text-foreground dark:text-background py-12 px-4 overflow-hidden">
-      <div className="container flex flex-col md:flex-row gap-4 justify-between items-center">
-        <div className="flex gap-2 items-center">
+    <footer className="overflow-hidden bg-background px-4 py-12 text-foreground dark:bg-secondary dark:text-background">
+      <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
+        <div className="flex items-center gap-2">
           <Logo className="size-8" />
           <h6 className="text-xl font-medium">Hero Programmers</h6>
         </div>
         <div className="text-sm">&copy; 2024 - All Rights Reserved.</div>
-        <div className="flex gap-2 items-center font-medium">
-          <Link href={"/"}>Home</Link>
-          <Link href={"/"}>About</Link>
-          <Link href={"/"}>Join</Link>
+        <div className="flex items-center gap-2 font-medium">
+          <Navigation />
         </div>
       </div>
     </footer>
