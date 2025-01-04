@@ -16,13 +16,13 @@ const Headline = () => {
   });
 
   return (
-    <section className="relative h-[800vh]" ref={containerRef}>
+    <section className="container relative h-[800vh]" ref={containerRef}>
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.p
           style={{
             x,
           }}
-          className="w-fit text-nowrap text-[10rem] md:text-[20rem] lg:text-[40rem]"
+          className="w-fit text-nowrap text-[10rem] md:text-[20rem] lg:text-[30rem]"
         >
           {headline}
         </motion.p>

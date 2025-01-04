@@ -44,7 +44,7 @@ const ThemeTransition = () => {
     <div key={"theme-transition"} ref={scope}>
       <div
         ref={wrapperRef}
-        className={`fixed inset-0 flex items-center justify-center ${backgroundColor}`}
+        className={`fixed inset-0 flex items-center justify-center ${backgroundColor} z-[999]`}
       >
         <div ref={logoWrapperRef}>
           <Logo className="size-64 md:size-full" />
