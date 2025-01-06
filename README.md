@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="center">
+    <img src="./public/hero-programmers.jpg" alt="Hero Programmers" style="border-radius: 16px;" />
+</p>
 
-## Getting Started
+<div style="display: flex; align-items: center; gap: 12px; justify-content: center">
 
-First, run the development server:
+[![discord](./src/assets/discord.svg =64x)](https://discord.gg/hero-programmers-720365448809545742)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<p><a href="https://discord.gg/hero-programmers-720365448809545742"><b>Join us on discord</b></a></p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[![discord](https://img.shields.io/discord/720365448809545742?style=plastic&label=discord)](https://discord.gg/hero-programmers-720365448809545742)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+</div>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+# [Hero Programmers](https://hero-programmers.vercel.app)
 
-To learn more about Next.js, take a look at the following resources:
+We, Hero Programmers, a friendly community for beginner programmers who wants to become a Programming Hero!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## About us
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+At Hero Programmers, we're on a mission to bring together like-minded individuals who share a passion for coding and technology.
 
-## Deploy on Vercel
+Whether you're a seasoned programmer or just starting your coding journey, our vibrant Discord server is the place to be! 🌐
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Grandma's here to guide you on a magical coding journey! 🧙‍♀️
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+We believe every grandkid, aka Hero Programmer, needs to be more connected and always strive to do something awesome for this world by using their coding magic. 🪄 💻
+
+**So, what are you waiting for? Join us today!**
+
+---
+
+<h3 align="center"> Let's code_ your career & learn as one.</h3>
+
+---
