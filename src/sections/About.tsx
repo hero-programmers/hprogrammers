@@ -8,7 +8,7 @@ import { FaDiscord } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section className="mt-8">
+    <section className="md:mt-8">
       <AboutSection>
         <AboutSectionDescription>
           At Hero Programmers, we&apos;re on a mission to bring together
@@ -23,7 +23,7 @@ const About = () => {
           journey, our vibrant Discord server is the place to be! 🌐
         </AboutSectionDescription>
         <AboutSectionTitle>
-          <FaDiscord />
+          <FaDiscord className="size-12 md:size-24" />
         </AboutSectionTitle>
       </AboutSection>
 
@@ -37,12 +37,12 @@ const About = () => {
       <AboutSection>
         <AboutSectionDescription>
           We believe every grandkid, aka Hero Programmer{" "}
-          <Logo className="inline size-8" />, needs to be more connected and
-          always strive to do something awesome for this world by using their
-          coding magic. 🪄 💻
+          <Logo className="inline size-6 md:size-8" />, needs to be more
+          connected and always strive to do something awesome for this world by
+          using their coding magic. 🪄 💻
         </AboutSectionDescription>
         <AboutSectionTitle>
-          <Logo className="size-24" />
+          <Logo className="size-12 md:size-24" />
         </AboutSectionTitle>
       </AboutSection>
       <AboutSectionTitle>
