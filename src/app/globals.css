@@ -3,14 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --primary: hsl(276, 88%, 24%);
-  --secondary: hsl(216, 52%, 11%);
-  --background: #fafafa;
-  --foreground: #171717;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  --gradient-primary: hsl(276, 88%, 24%);
+  --gradient-secondary: hsl(216, 52%, 11%);
+  --white: #fafafa;
+  --black: #171717;
 }

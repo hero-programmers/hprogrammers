@@ -1,45 +1,21 @@
-import Logo from "@/assets/logo";
-import { DiscordChannel } from "@/components/ui";
+import LogoMotion from "@/assets/logo-motion";
+import { Button } from "@/components/ui";
 
 const Hero = () => {
   return (
-    <section className="relative flex h-screen items-center justify-center overflow-hidden text-foreground dark:text-background">
-      <div className="absolute inset-0 -z-10 bg-background dark:bg-hero" />
-      <div className="container relative flex h-fit items-center justify-center gap-2 md:gap-4 lg:gap-6">
-        <DiscordChannel
-          channelName="coding-help"
-          style={{
-            top: "20%",
-            translate: "70% 0",
-            rotate: "-15deg",
-          }}
-        />
-        <DiscordChannel
-          channelName="general"
-          style={{ rotate: "-20deg", left: 0, top: "10%" }}
-        />
-        <DiscordChannel
-          channelName="announcement"
-          style={{
-            bottom: "50%",
-            translate: "0 164%",
-            rotate: "-10deg",
-            zIndex: -10,
-          }}
-        />
-        <DiscordChannel
-          channelName="global-chat"
-          style={{
-            right: "-6%",
-            translate: "0 -35px",
-            rotate: "45deg",
-          }}
-        />
-        <Logo className="w-16 lg:w-32 xl:w-64" />
-        <div>
-          <h1 className="font-space-grotesk text-2xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
+    <section className="relative flex h-screen items-center justify-center overflow-hidden text-soft-white">
+      <div className="absolute inset-0 -z-10 bg-hero" />
+      <div className="container relative mx-2 flex flex-col items-center justify-center gap-2 md:gap-4 lg:gap-6">
+        <LogoMotion className="mb-4 w-32 xl:w-64" />
+        <div className="text-center">
+          <h1 className="mb-6 font-space-grotesk text-3xl font-bold text-white md:text-4xl lg:text-5xl xl:text-6xl">
             Hero Programmers
           </h1>
+          <p className="mx-auto mb-8 max-w-screen-lg text-lg !leading-relaxed text-discord-white-300 md:text-4xl">
+            We, a friendly community for beginner programmers who wants to
+            become a <strong>PROGRAMMING HERO!</strong>
+          </p>
+          <Button className="text-xl md:text-2xl lg:text-3xl xl:text-4xl" />
         </div>
       </div>
     </section>

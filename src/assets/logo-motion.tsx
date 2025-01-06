@@ -1,16 +1,16 @@
 "use client";
 import { motion } from "framer-motion";
+import { SVGProps } from "react";
 
-const LogoMotion = () => {
+const LogoMotion = (props: SVGProps<SVGSVGElement>) => {
   return (
-    <motion.svg
+    <svg
       version="1.1"
       id="svg1"
-      width="607.09863"
-      height="556.88403"
       viewBox="0 0 607.09863 556.88403"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <defs id="defs1">
         <linearGradient
@@ -253,7 +253,7 @@ const LogoMotion = () => {
               ],
             }}
             transition={{
-              delay: 1.2,
+              delay: 0.2,
               duration: 2,
               repeat: Infinity,
               ease: "linear",
@@ -275,7 +275,7 @@ const LogoMotion = () => {
               ],
             }}
             transition={{
-              delay: 1.1,
+              delay: 0.1,
               duration: 2,
               repeat: Infinity,
               ease: "linear",
@@ -294,7 +294,6 @@ const LogoMotion = () => {
               ],
             }}
             transition={{
-              delay: 1,
               duration: 2,
               repeat: Infinity,
               ease: "linear",
@@ -306,7 +305,7 @@ const LogoMotion = () => {
           />
         </g>
       </g>
-    </motion.svg>
+    </svg>
   );
 };
 

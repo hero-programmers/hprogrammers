@@ -3,7 +3,6 @@ import { spaceGrotesk } from "./fonts";
 
 import "./globals.css";
 import { SmoothScroll } from "@/components";
-import { ThemeProvider } from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "Hero Programmers",
@@ -16,17 +15,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body
-        className={`${spaceGrotesk.variable} bg-background font-space-grotesk text-foreground antialiased dark:bg-secondary dark:text-background`}
+        className={`${spaceGrotesk.variable} bg-background font-space-grotesk text-white antialiased`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          disableTransitionOnChange
-        >
-          <SmoothScroll>{children}</SmoothScroll>
-        </ThemeProvider>
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );
