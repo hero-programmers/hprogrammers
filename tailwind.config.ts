@@ -19,6 +19,7 @@ export default {
         "soft-white": "var(--white)",
         "soft-black": "var(--black)",
         "blue-flame": "#5c53fe",
+        "discord-logo": "#5865f2",
         "hot-magenta": "#dc02ce",
         background: "#0D192B",
         "discord-white": {

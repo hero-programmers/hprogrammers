@@ -1,10 +1,10 @@
-import { Hero, Headline, CallToAction, Footer, Header } from "@/sections";
-import About from "@/sections/About";
+import { Hero, Headline, CallToAction, Footer, Header, About } from "@/sections";
 export default function Home() {
   return (
     <>
       <main>
         <Hero />
+        <About />
       </main>
     </>
   );
