@@ -1,30 +1,34 @@
 "use client";
 
 import { useRef } from "react";
-import { cubicBezier, motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { headline } from "@/constant";
 
 const Headline = () => {
   const containerRef = useRef<HTMLElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end end"],
-  });
-
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"], {
-    ease: cubicBezier(0.37, 0, 0.63, 1),
-  });
 
   return (
-    <section className="container relative h-[800vh]" ref={containerRef}>
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+    <section
+      className="relative mx-auto my-12 h-fit max-w-screen-2xl py-2"
+      ref={containerRef}
+    >
+      <div className="mx-4 flex h-fit items-center overflow-hidden">
         <motion.p
-          style={{
-            x,
+          initial={{
+            translateX: "0%",
           }}
-          className="w-fit text-nowrap text-[10rem] md:text-[20rem] lg:text-[30rem]"
+          animate={{
+            translateX: "-50%",
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            ease: "linear",
+          }}
+          className="flex w-fit items-center gap-4 text-nowrap pr-4 text-7xl !leading-loose md:text-8xl lg:text-9xl"
         >
-          {headline}
+          <span className="inline-block">{headline}</span>
+          <span className="inline-block">{headline}</span>
         </motion.p>
       </div>
     </section>
