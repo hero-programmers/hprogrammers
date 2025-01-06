@@ -8,7 +8,7 @@ import { FaDiscord } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section className="md:mt-8">
+    <section className="md:mt-8" id="about">
       <AboutSection>
         <AboutSectionDescription>
           At Hero Programmers, we&apos;re on a mission to bring together

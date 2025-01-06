@@ -7,19 +7,19 @@ const Navigation = () => {
     <>
       <Link
         href="/"
-        className="underline-offset-4 transition duration-500 hover:text-gray-600 hover:underline dark:hover:text-gray-400"
+        className="underline-offset-4 transition duration-500 hover:text-discord-white-600 hover:underline"
       >
-        Home
+        Top
       </Link>
       <Link
         href="/#about"
-        className="underline-offset-4 transition duration-500 hover:text-gray-600 hover:underline dark:hover:text-gray-400"
+        className="underline-offset-4 transition duration-500 hover:text-discord-white-600 hover:underline"
       >
         About
       </Link>
       <Link
         href={discordInviteLink}
-        className="underline-offset-4 transition duration-500 hover:text-gray-600 hover:underline dark:hover:text-gray-400"
+        className="underline-offset-4 transition duration-500 hover:text-discord-white-600 hover:underline"
       >
         Join
       </Link>
