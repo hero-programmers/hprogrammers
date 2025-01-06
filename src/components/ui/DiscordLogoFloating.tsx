@@ -13,7 +13,7 @@ const DiscordLogoFloating = ({ className }: { className?: string }) => {
     >
       <FaDiscord
         className={cn(
-          "absolute left-0 z-[1] -rotate-45 text-[20rem] text-discord-white-600 md:text-[40rem]",
+          "absolute left-0 z-[1] -rotate-45 text-[20rem] text-discord-logo md:text-[40rem]",
           className,
         )}
       />

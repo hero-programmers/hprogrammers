@@ -1,5 +1,5 @@
 import { PreLoader } from "@/components";
-import { Hero, About } from "@/sections";
+import { Hero, About, CallToAction } from "@/sections";
 export default function Home() {
   return (
     <>
@@ -7,6 +7,7 @@ export default function Home() {
       <main>
         <Hero />
         <About />
+        <CallToAction />
       </main>
     </>
   );

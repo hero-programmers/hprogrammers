@@ -45,9 +45,6 @@ const About = () => {
           <Logo className="size-12 md:size-24" />
         </AboutSectionTitle>
       </AboutSection>
-      <AboutSectionTitle>
-        So, what are you waiting for? Join us today!
-      </AboutSectionTitle>
     </section>
   );
 };
