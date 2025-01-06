@@ -1,12 +1,10 @@
 <p align="center">
-    <img src="./public/hero-programmers.jpg" alt="Hero Programmers" style="border-radius: 16px;" />
+    <img src="./public/hero-programmers.jpg" alt="Hero Programmers" />
 </p>
 
-<div style="display: flex; align-items: center; gap: 12px; justify-content: center">
+<div align="center">
 
-[![discord](./src/assets/discord.svg =64x)](https://discord.gg/hero-programmers-720365448809545742)
-
-<p><a href="https://discord.gg/hero-programmers-720365448809545742"><b>Join us on discord</b></a></p>
+[Join us on discord
 
 [![discord](https://img.shields.io/discord/720365448809545742?style=plastic&label=discord)](https://discord.gg/hero-programmers-720365448809545742)
 
