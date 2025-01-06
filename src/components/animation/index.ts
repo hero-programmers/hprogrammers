@@ -1,5 +1,4 @@
 import TextOpacity from "./text-opacity";
-import ThemeTransition from "./theme-transition";
-import { SlideIn } from "./layout-transition";
+import PreLoadingAnimation from "./pre-loading-animaiton";
 
-export { TextOpacity, ThemeTransition, SlideIn };
+export { TextOpacity, PreLoadingAnimation };
