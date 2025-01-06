@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[Join us on discord
+[Join us on discord](https://discord.gg/hero-programmers-720365448809545742)
 
 [![discord](https://img.shields.io/discord/720365448809545742?style=plastic&label=discord)](https://discord.gg/hero-programmers-720365448809545742)
 
