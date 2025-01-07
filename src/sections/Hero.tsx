@@ -1,5 +1,5 @@
 import LogoMotion from "@/assets/logo-motion";
-import { Button } from "@/components/ui";
+import { JoinUsButton } from "@/components/ui";
 
 const Hero = () => {
   return (
@@ -15,7 +15,7 @@ const Hero = () => {
             We, a friendly community for beginner programmers who wants to
             become a <strong>PROGRAMMING HERO!</strong>
           </p>
-          <Button className="text-xl md:text-2xl lg:text-3xl xl:text-4xl" />
+          <JoinUsButton className="text-xl md:text-2xl lg:text-3xl xl:text-4xl" />
         </div>
       </div>
     </section>

@@ -1,11 +1,11 @@
 import DiscordChannel from "./DiscordChannel";
 import DiscordLogoFloating from "./DiscordLogoFloating";
-import Button from "./Button";
+import JoinUsButton from "./JoinUsButton";
 import AboutSection from "./AboutSection";
 
 export {
   DiscordChannel,
   DiscordLogoFloating,
-  Button,
+  JoinUsButton,
   AboutSection,
 };

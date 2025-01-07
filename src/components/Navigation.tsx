@@ -1,6 +1,6 @@
-import { discordInviteLink } from "@/constant";
 import Link from "next/link";
 import React from "react";
+import { JoinUsButton } from "./ui";
 
 const Navigation = () => {
   return (
@@ -17,12 +17,7 @@ const Navigation = () => {
       >
         About
       </Link>
-      <Link
-        href={discordInviteLink}
-        className="underline-offset-4 transition duration-500 hover:text-discord-white-600 hover:underline"
-      >
-        Join
-      </Link>
+      <JoinUsButton />
     </>
   );
 };

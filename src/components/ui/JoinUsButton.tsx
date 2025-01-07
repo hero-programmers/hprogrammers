@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { FaDiscord } from "react-icons/fa6";
 
-const Button = ({ className }: { className?: string }) => {
+const JoinUsButton = ({ className }: { className?: string }) => {
   return (
     <button
       className={cn(
@@ -16,4 +16,4 @@ const Button = ({ className }: { className?: string }) => {
   );
 };
 
-export default Button;
+export default JoinUsButton;

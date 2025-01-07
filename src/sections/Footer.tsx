@@ -1,17 +1,24 @@
 import LogoMotion from "@/assets/logo-motion";
-import { Navigation } from "@/components";
+import { Navigation, Socials } from "@/components";
 
 const Footer = () => {
   return (
-    <footer className="relative overflow-hidden bg-background px-4 py-12 text-white">
-      <div className="container z-[2] flex flex-col items-center justify-between gap-4 md:flex-row">
-        <div className="flex items-center gap-2">
-          <LogoMotion className="size-8" />
-          <h6 className="text-xl font-medium">Hero Programmers</h6>
+    <footer className="relative overflow-hidden bg-background px-4 py-6 text-white">
+      <div className="container space-y-6">
+        <div className="flex flex-col justify-between gap-4 md:flex-row md:items-baseline">
+          <div className="flex flex-col justify-between">
+            <div className="flex items-center gap-2">
+              <LogoMotion className="size-8" />
+              <h3 className="text-xl font-medium">Hero Programmers</h3>
+            </div>
+          </div>
+          <div className="flex w-fit items-center gap-4 font-medium">
+            <Navigation />
+          </div>
+          <Socials />
         </div>
-        <div className="text-sm">&copy; 2024 - 2025 | All Rights Reserved.</div>
-        <div className="flex items-center gap-4 font-medium">
-          <Navigation />
+        <div className="text-center text-sm text-discord-white-600">
+          &copy; 2024 - 2025. All Rights Reserved.
         </div>
       </div>
     </footer>
