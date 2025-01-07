@@ -22,16 +22,14 @@ const DiscordChannel = ({
       animate={{ translateY: [0, -10, 0] }}
       transition={{ duration: 3, repeat: Infinity }}
       className={cn(
-        "absolute h-fit cursor-pointer rounded-lg border border-discord-white-600 bg-discord-white px-4 py-2 text-xs shadow-sm hover:bg-discord-white-600 dark:border-none dark:bg-discord-black dark:hover:bg-discord-black-400 md:text-lg",
+        "absolute h-fit cursor-pointer rounded-lg bg-discord-black p-2 text-xs shadow-sm hover:bg-discord-black-400 md:px-4 md:py-2 md:text-base",
         className,
       )}
     >
       <div className="font-semibold">
         <Link href={discordInviteLink} className="flex items-center gap-3">
-          <span className="inline-block italic text-discord-black dark:text-discord-black-100">
-            #
-          </span>
-          <span className="inline-block text-discord-black dark:text-discord-white-600">
+          <span className="inline-block italic text-discord-black-100">#</span>
+          <span className="inline-block text-discord-white-600">
             {channelName}
           </span>
         </Link>
