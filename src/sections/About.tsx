@@ -1,5 +1,6 @@
 import Logo from "@/assets/logo";
-import { FadeIn } from "@/components/animation";
+import LogoMotion from "@/assets/logo-motion";
+import { FadeIn, SlideUp } from "@/components/animation";
 import { TextSlideUp } from "@/components/animation/text-popup";
 import { AboutSection } from "@/components/ui";
 import {
@@ -31,9 +32,9 @@ const About = () => {
             coding journey, our vibrant Discord server is the place to be! 🌐
           </AboutSectionDescription>
           <AboutSectionTitle>
-            <FadeIn>
+            <SlideUp>
               <FaDiscord className="size-12 md:size-24" />
-            </FadeIn>
+            </SlideUp>
           </AboutSectionTitle>
         </AboutSection>
       </FadeIn>
@@ -44,7 +45,7 @@ const About = () => {
             Grandma&apos;s here to guide you on a magical coding journey! 🧙‍♀️{" "}
           </AboutSectionDescription>
           <AboutSectionTitle>
-            <FadeIn>🧙‍♀️</FadeIn>
+            <SlideUp>🧙‍♀️</SlideUp>
           </AboutSectionTitle>
         </AboutSection>
       </FadeIn>
@@ -58,9 +59,9 @@ const About = () => {
             by using their coding magic. 🪄 💻
           </AboutSectionDescription>
           <AboutSectionTitle>
-            <FadeIn>
-              <Logo className="size-12 md:size-24" />
-            </FadeIn>
+            <SlideUp>
+              <LogoMotion className="size-12 md:size-24" />
+            </SlideUp>
           </AboutSectionTitle>
         </AboutSection>
       </FadeIn>
