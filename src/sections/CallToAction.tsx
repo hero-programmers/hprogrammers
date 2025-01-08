@@ -6,18 +6,22 @@ import { useRef } from "react";
 import useMousePosition from "@/hooks/useMousePosition";
 import { motion, useMotionTemplate } from "framer-motion";
 import { DiscordLogoFloating } from "@/components/ui";
+import { TextSlideUp } from "@/components/animation/text-popup";
 
 const CallToAction = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
 
   const [mouseX, mouseY] = useMousePosition(containerRef);
 
   const backgroundImage = useMotionTemplate`radial-gradient(circle at left ${mouseX}px top ${mouseY}px, var(--gradient-primary), var(--gradient-secondary), var(--gradient-secondary))`;
 
   return (
-    <section className="mx-auto mb-4 max-w-screen-2xl">
+    <section className="mx-auto mb-4 max-w-screen-2xl" ref={sectionRef}>
       <h2 className="mb-8 mt-12 px-2 text-center text-2xl font-bold md:text-3xl lg:text-4xl xl:text-5xl">
-        So, what are you waiting for? Join us today!
+        <TextSlideUp type="word">
+          So, what are you waiting for? Join us today!
+        </TextSlideUp>
       </h2>
       <div
         ref={containerRef}
