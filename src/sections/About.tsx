@@ -1,4 +1,5 @@
 import Logo from "@/assets/logo";
+import { TextSlideUp } from "@/components/animation/text-popup";
 import { AboutSection } from "@/components/ui";
 import {
   AboutSectionDescription,
@@ -14,7 +15,9 @@ const About = () => {
           At Hero Programmers, we&apos;re on a mission to bring together
           like-minded individuals who share a passion for coding and technology.
         </AboutSectionDescription>
-        <AboutSectionTitle>Mission</AboutSectionTitle>
+        <AboutSectionTitle>
+          <TextSlideUp>Mission</TextSlideUp>
+        </AboutSectionTitle>
       </AboutSection>
 
       <AboutSection>
