@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { PreLoadingAnimation } from "./animation";
 import { AnimatePresence } from "framer-motion";
 
-const DELAY = 2;
+export const LOADING_DELAY = 4;
 
 const PreLoader = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -12,12 +12,12 @@ const PreLoader = () => {
     (async () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, DELAY * 1000);
+      }, LOADING_DELAY * 1000);
     })();
   });
   return (
     <AnimatePresence mode="wait">
-      {isLoading && <PreLoadingAnimation />}
+      {isLoading && <PreLoadingAnimation duration={LOADING_DELAY} />}
     </AnimatePresence>
   );
 };

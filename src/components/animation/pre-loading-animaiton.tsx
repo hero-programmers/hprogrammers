@@ -3,7 +3,7 @@ import Logo from "@/assets/logo";
 import { useAnimate } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-const PreLoadingAnimation = () => {
+const PreLoadingAnimation = ({ duration }: { duration: number }) => {
   const [scope, animate] = useAnimate();
   const wrapperRef = useRef<HTMLDivElement>(null);
   const logoWrapperRef = useRef<HTMLDivElement>(null);
@@ -13,13 +13,13 @@ const PreLoadingAnimation = () => {
     try {
       await animate(
         logoWrapperRef.current,
-        { scale: 8, x: 1920 * 2 },
-        { duration: 1.6 },
+        { scale: 4, x: screen.width * 1.5 },
+        { duration: duration - 0.2 },
       );
       await animate(
         wrapperRef.current,
         { clipPath: "circle(0% at 150% 50%)" },
-        { duration: 0.4 },
+        { duration: 0.2 },
       );
     } catch {}
   };
