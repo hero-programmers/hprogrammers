@@ -1,4 +1,5 @@
 "use client";
+import { cn } from "@/lib/utils";
 import { motion, MotionProps } from "framer-motion";
 
 export const FadeIn: React.FC<{ children: React.ReactNode } & MotionProps> = ({
@@ -18,13 +19,12 @@ export const FadeIn: React.FC<{ children: React.ReactNode } & MotionProps> = ({
   );
 };
 
-export const SlideUp: React.FC<{ children: React.ReactNode } & MotionProps> = ({
-  children,
-  ...rest
-}) => {
+export const SlideUp: React.FC<
+  { children: React.ReactNode; className?: string } & MotionProps
+> = ({ children, className, ...rest }) => {
   return (
-    <div className="w-full overflow-hidden">
-      <motion.div
+    <span className={cn("inline-block w-full overflow-hidden", className)}>
+      <motion.span
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
@@ -32,10 +32,11 @@ export const SlideUp: React.FC<{ children: React.ReactNode } & MotionProps> = ({
           duration: 0.3,
           delay: 0.5,
         }}
+        className="inline-block"
         {...rest}
       >
         {children}
-      </motion.div>
-    </div>
+      </motion.span>
+    </span>
   );
 };
