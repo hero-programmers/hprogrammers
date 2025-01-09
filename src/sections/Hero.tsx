@@ -18,9 +18,7 @@ const Hero = () => {
               style={{ rotate: "-30deg", translate: "0px -60px" }}
             />
             <h1 className="mb-6 font-space-grotesk text-3xl font-bold text-white md:text-4xl lg:text-5xl xl:text-6xl">
-              <TextSlideUp type="word" transition={{ delay: 4.4 }}>
-                Hero Programmers
-              </TextSlideUp>
+              <TextSlideUp type="word">Hero Programmers</TextSlideUp>
             </h1>
             <DiscordChannel
               channelName="coding-resources"

@@ -11,7 +11,7 @@ import { FaDiscord } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section className="md:mt-8" id="about">
+    <section className="md:mt-16" id="about">
       <FadeIn>
         <AboutSection>
           <AboutSectionDescription>
