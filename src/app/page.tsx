@@ -3,15 +3,15 @@ import { Hero, About, CallToAction, Footer, Headline } from "@/sections";
 export default function Home() {
   return (
     <>
-      <BlurOut>
-        <main>
+      <main>
+        <BlurOut>
           <Hero />
           <About />
           <CallToAction />
           <Headline />
           <Footer />
-        </main>
-      </BlurOut>
+        </BlurOut>
+      </main>
     </>
   );
 }
