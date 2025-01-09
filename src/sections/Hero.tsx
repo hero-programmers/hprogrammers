@@ -5,14 +5,11 @@ import { DiscordChannel, JoinUsButton } from "@/components/ui";
 
 const Hero = () => {
   return (
-    <FadeIn transition={{ delay: 4.2 }}>
-      <section className="relative flex h-screen items-center justify-center overflow-hidden text-soft-white">
+    <FadeIn>
+      <section className="relative flex h-[100svh] items-center justify-center overflow-hidden text-soft-white">
         <div className="absolute inset-0 -z-10 bg-hero" />
         <div className="container relative mx-2 flex flex-col items-center justify-center gap-2 md:gap-4 lg:gap-6">
-          <SlideUp
-            transition={{ delay: 4.4 }}
-            className="flex items-center justify-center"
-          >
+          <SlideUp className="flex items-center justify-center">
             <LogoMotion className="mb-4 w-32 xl:w-64" />
           </SlideUp>
           <div className="relative text-center">
@@ -34,7 +31,7 @@ const Hero = () => {
                 right: 0,
               }}
             />
-            <SlideUp transition={{ delay: 4.4 }}>
+            <SlideUp>
               <p className="mx-auto mb-8 max-w-screen-lg text-lg !leading-relaxed text-discord-white-300 md:text-4xl">
                 We, a friendly community for beginner programmers who wants to
                 become a <strong>PROGRAMMING HERO!</strong>

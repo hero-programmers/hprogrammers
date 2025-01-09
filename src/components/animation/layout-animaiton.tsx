@@ -40,3 +40,27 @@ export const SlideUp: React.FC<
     </span>
   );
 };
+
+export const BlurOut: React.FC<{ children: React.ReactNode } & MotionProps> = ({
+  children,
+  ...rest
+}) => {
+  return (
+    <motion.div
+      initial={{
+        opacity: 0,
+        filter: "blur(10px)",
+      }}
+      animate={{
+        opacity: 1,
+        filter: "blur(0px)",
+      }}
+      transition={{
+        duration: 1,
+      }}
+      {...rest}
+    >
+      {children}
+    </motion.div>
+  );
+};

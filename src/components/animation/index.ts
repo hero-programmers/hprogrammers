@@ -1,5 +1,4 @@
 import TextOpacity from "./text-opacity";
-import PreLoadingAnimation from "./pre-loading-animaiton";
-import { FadeIn, SlideUp } from "./layout-animaiton";
+import { FadeIn, SlideUp, BlurOut } from "./layout-animaiton";
 
-export { TextOpacity, PreLoadingAnimation, FadeIn, SlideUp };
+export { TextOpacity, FadeIn, SlideUp, BlurOut };
